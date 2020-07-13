@@ -9,13 +9,22 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      searchResults: [{
-        id: '',
-        name: '',
-        artist: '',
-        album: ''
-      }]
+      searchResults: [
+        {
+          name: '',
+          artist: '',
+          album: '',
+          id: ''
+        },
+        {
+          name: '',
+          artist: '',
+          album: '',
+          id: ''
+        }
+      ]
     };
+
   }
 
 
