@@ -1,5 +1,5 @@
 const clientID = "af660e02ca664747bcbf2531eff92d6b";
-const redirectURI = "http://localhost:3000/";
+const redirectURI = "http://roguejamming.surge.sh";
 let accessToken = "";
 
 const Spotify = {
@@ -73,7 +73,7 @@ const Spotify = {
         const playlistId = jsonResponse.id;
         return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`,
         {
-          header: headers,
+          headers: headers,
           method: 'POST',
           body: JSON.stringify({ uris: trackUris })
         })
