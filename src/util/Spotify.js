@@ -1,4 +1,4 @@
-const clientID = "af660e02ca664747bcbf2531eff92d6b";
+const clientID = "";
 const redirectURI = "http://roguejamming.surge.sh";
 let accessToken = "";
 
